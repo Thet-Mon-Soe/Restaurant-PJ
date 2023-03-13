@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Ma Gyi Restaurant</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jquery js -->
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar open -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/logo.jpg"> Mon Ma Gyi Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="curry.html">Curry & Food</a></li>
+                            <li><a class="dropdown-item" href="fast_food.html">Fast Food</a></li>
+                            <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                            <li><a class="dropdown-item" href="snack.html">Snack</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="drink.html">Drink</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar close -->
+
+    <!-- content open -->
+    <section class="section-padding">
+        <div class="container reservation">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-10 offset-1">
+                    <form class="form-control">
+                        <h2>Online Reservation</h2>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <label for="">Your Name</label>
+                                <input type="text" class="form-control" placeholder="Mg / Ma _________">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <label for="">Phone Number</label>
+                                <input type="number" class="form-control" placeholder="09XXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                <label>Population</label>
+                                <select class="form-select">
+                                    <option value="one">1 person</option>
+                                    <option value="two">2 person</option>
+                                    <option value="three">3 person</option>
+                                    <option value="four">4 person</option>
+                                    <option value="five">5 person</option>
+                                    <option value="six">6 person</option>
+                                    <option value="seven">7 person</option>
+                                    <option value="eight">8 person</option>
+                                    <option value="nine">9 person</option>
+                                    <option value="ten">10 person</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                <label>Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                <label>Time</label>
+                                <select class="form-select">
+                                    <option value="a">08:00 am</option>
+                                    <option value="b">10:30 am</option>
+                                    <option value="c">12:00 pm</option>
+                                    <option value="d">02:00 pm</option>
+                                    <option value="e">04:30 pm</option>
+                                    <option value="f">6:00 pm</option>
+                                    <option value="g">08:00 pm</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Message</label>
+                                <textarea class="form-control" placeholder="Give me message ..." cols="30" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="book-btn d-flex justify-content-end">
+                                <button>Book a Table</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content close -->
+
+    <!-- footer open -->
+    <section class="footer ">
+        <div class="container-fluid footer-container ">
+            <h5>HEALTHY FAST-CASUAL FOOD , CREATED BY MON MA GYI RESTAURANT</h5>
+            <h6>@ Web Design By Thet Mon Soe , 2023</h6>
+        </div>
+    </section>
+    <!-- footer close -->
+
+</body>
+<script>
+    $('document').ready(function() {
+        $('input').focus(function() {
+            $(this).css("background-color", "rgb(69, 67, 67)");
+            $(this).css("color", "white");
+        })
+        $('textarea').focus(function() {
+            $(this).css("background-color", "rgb(69, 67, 67)");
+            $(this).css("color", "white");
+        })
+    })
+</script>
+
+</html>
